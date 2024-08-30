@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    cursor: default;
+}
+
+.index {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo {
+    width: 60px;
+    margin: 2% 0 0% 1%;
+    border: 15px;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: /*linear-gradient(rgba(0, 0, 0, 0.413), rgba(55, 55, 55, 0.614)),*/ url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.user {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    left: 50%;
+    margin: auto;
+    backdrop-filter: blur(3px);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 255, 0.434);
+}
+
+.user h3 {
+    padding: 5% 0 3% 0;
+    font-size: 40px;
+}
+
+.userpic {
+    width: 75px;
+    box-shadow: 1px 1px 1px 0.5px blue;
+    border-radius: 100px;
+}
+
+.user h4 {
+    padding-top: 2%;
+    font-size: 30px;
+}
+
+.user p {
+    font-size: 20px;
+    padding: 10% 0 3% 0;
+}
+
+.pa {
+    background: none;
+    color: white;
+    width: 35px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    transition: 1.0s;
+}
+
+.pa:hover, .pa:focus {
+    background: #333;
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.butto {
+    padding: 5% 0 0 0;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    width: 150px;
+    height: 45px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    font: inherit;
+    transition: 1.0s;
+}
+
+button:hover, button:focus {
+    color: rgb(255, 255, 255);
+    background: #33333368;
+    width: 150px;
+    height: 45px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    font: inherit;
+}
+
+/* h1 {
+    position: relative;
+    width: max-content;
+    font-size: 200px;
+    margin: auto;
+}
+
+h1::after {
+    content: '';
+    background: linear-gradient(45deg, blue,red);
+    width: 0%;
+    height: 30px;
+    position: absolute;
+    border-radius:100px ;
+    bottom: 0;
+    left: 0;
+    transition: 1.0s;
+}
+
+h1:hover::after {
+    width: 100%;
+} */
+
+.second {
+    min-height: 100vh;
+    background-image: url('img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Segoe UI Variable Static Display', sans-serif;
+}
+
+.second p {
+    margin: 0 0 0 0.25%;
+    padding: 0 0 0 0.25%;
+    font-size: 12px;
+}
+
+.thispc img {
+    width: 45px;
+    margin: 0.5% 0 0 0.5%;
+}
+
+.thispc {
+    border: 1px solid none;
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.thispc:hover, .thispc:focus {
+    border: 1px solid none;
+    background: #a7a7a72d;
+    border-radius:2px ;
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.recyclebin img {
+    width: 45px;
+    margin: 0.5% 0 0 0.5%;
+}
+
+.recyclebin {
+    border: 1px solid none;
+    position: absolute;
+    top: 100px;
+    left: 0.5%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.recyclebin:hover, .recyclebin:focus {
+    border: 1px solid none;
+    background: #a7a7a72d;
+    border-radius:2px ;
+    position: absolute;
+    top: 100px;
+    left: 0.5%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.edge img {
+    width: 45px;
+    margin: 0.5% 0 0 0.5%;
+}
+
+.edge {
+    border: 1px solid none;
+    position: absolute;
+    top: 200px;
+    left: 0.5%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.edge:hover, .edge:focus {
+    border: 1px solid none;
+    background: #a7a7a72d;
+    border-radius:2px ;
+    position: absolute;
+    top: 200px;
+    left: 0.5%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.taskbar {
+    border-top: 1.5px solid rgb(57, 57, 57);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    backdrop-filter: blur(10px);
+    padding-left: 35%
+}
+
+.taskbar .taskbarstart img {
+    width: 30px;
+    position: absolute;
+    float: left;
+    top: 8px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbarstart img:hover {
+    width: 30px;
+    position: absolute;
+    float: left;
+    top: 8px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbarsearch img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 50px;
+    top: 12px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbarsearch img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 50px;
+    top: 12px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbartaskview img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 100px;
+    top: 12px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbartaskview img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 100px;
+    top: 12px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbarexplorer img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 150px;
+    top: 10px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbarexplorer img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 150px;
+    top: 10px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbaredge img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 200px;
+    top: 10px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbaredge img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 200px;
+    top: 10px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbarstore img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 250px;
+    top: 10px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbarstore img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 250px;
+    top: 10px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbaryt img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 300px;
+    top: 10px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbaryt img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 300px;
+    top: 10px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.taskbar .taskbarmail img {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 350px;
+    top: 10px;
+    cursor:default;
+    transition: 0.2s;
+}
+
+.taskbar .taskbarmail img:hover {
+    width: 24px;
+    position: absolute;
+    align-items: center;
+    float: left;
+    margin-left: 350px;
+    top: 10px;
+    cursor:default;
+    background: #a7a7a736;
+    padding: 3px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.this {
+    background-image: url('img/thispcscreen.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.recy {
+    background-image: url('img/recyclebinscreen.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
